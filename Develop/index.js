@@ -33,7 +33,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Choose a License',
-            choices: ['MIT License','Apache License','BSD License','GPL License'],
+            choices: ['MIT License','Apache License','BSD License'],
         },
         {
             type: 'input',
