@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
 
-const fs = require("fs");
-const inquirer = require("inquirer");
+const fs = require('fs');
+const inquirer = require('inquirer');
+// const module.exports = require('module.exports');
+// const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 // Those questions are: Title / Description / Table of Contents / Instalation
@@ -33,7 +35,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Choose a License',
-            choices: ['MIT License','Apache License','BSD License'],
+            choices: ['No License', 'MIT License','Apache 2.0 License','BSD License'],
         },
         {
             type: 'input',
@@ -57,16 +59,17 @@ inquirer
         },
     ])
     .then((answers) => {
-        console.log(answers);
-        fs.writeFile('readMe.md', JSON.stringify (answers, null, '\t'), function (err) {
-            if (err) {
-                console.log(`ERROR: ${err}`);
-                return;
-            }
-            console.log("File written");
-        });
+       console.log(answers);
+        const titleMd = `${answers.title}.json`;
+        const descriptionMd = `${answers.descriotion}.json`
+
+
+    },
         
-    });
+
+        
+    );
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
