@@ -1,5 +1,5 @@
  	
-     # Again We Try
+     # Command Line README Generator
     
      ## Description:
     
@@ -16,11 +16,11 @@
 
      ## Instalation:
 
-     Perhaps it will
+     Download the App, then npm install. After that open tha command line and answer the questions
 
      ## Usage:
 
-     Or maybe Not
+     Use it to write a README fro the command line
 
      ## License:
 
@@ -28,14 +28,14 @@
 
      ## Contribution guildlines:
 
-     Soon we'll see
+     Contribute if you wish.
 
      ## Test instructions:
 
-     Test What?
+     Test as you see fit
 
      ## Questions:
 
-     github@github
+     OnlyMeHere@github.com
 
-     gmail@gmail.com
+     bennett45.j.m@gmail.com
